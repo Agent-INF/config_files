@@ -57,6 +57,7 @@
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
 (add-hook 'elpy-mode-hook (lambda ()
-			    (setq flycheck-checker 'python-pylint)))
+			    (setq flycheck-checker 'python-pylint)
+			    (setq python-indent 2)))
 
 (add-hook 'elpy-mode-hook 'jedi:setup)
